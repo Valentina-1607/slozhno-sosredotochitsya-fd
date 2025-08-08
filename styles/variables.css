@@ -1,4 +1,16 @@
 /*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
 */
+
+:root {
+  --font-family: "IBM Plex Mono", sans-serif;
+  --cover-image: url("../images/cover-image-dark.png");
+  --accent-color: #ff0070;
+  --h1-color: #db00ff;
+  --title-decor: #000028;
+  --main-padding: 0 10px;
+  --text-color: #f1b2ce;
+  --hover-element: rgba(255, 0, 112, 0.4);
+}

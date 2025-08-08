@@ -2,4 +2,249 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background: var(--cover-image) center / cover fixed var(--title-decor);
+  padding: var(--main-padding);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  position: relative;
+  height: 1vh;
+  min-height: 668px;
+  margin-block-end: 40px;
+}
+
+.header__top-row {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-block-start: 76px;
+}
+
+.header__decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: 633px;
+  left: 0px;
+  bottom: 10px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+}
+
+.header__decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  width: 25px;
+  height: 24px;
+}
+
+.header__decoration {
+  position: absolute;
+  top: 1px;
+  justify-self: flex-end;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 139%;
+  text-align: center;
+  margin-inline-end: 11px;
+  margin-block-start: 10px;
+  color: var(--accent-color);
+  margin-block-end: 41px;
+}
+
+.header__decoration::after {
+  content: "";
+  display: inline-block;
+  background-color: var(--accent-color);
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  margin-left: 9px;
+}
+
+.header__theme-menu {
+  justify-self: flex-end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-block-end: 69px;
+}
+
+.header__theme-menu-button {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: lowercase;
+  color: var(--accent-color);
+  padding: 2px 13px;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover-element);
+}
+
+button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--accent-color);
+}
+
+.title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 83%;
+  color: var(--h1-color);
+}
+
+.header__title {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin-block-end: 53px;
+}
+
+.header__text {
+  min-height: 117px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  margin-block-end: 31px;
+}
+
+.title-decor {
+  color: var(--title-decor);
+  background-color: var(--accent-color);
+}
+
+.main {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  gap: 50px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--accent-color);
+}
+
+.section__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  margin-block-end: 10px;
+}
+
+.section__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: var(--text-color);
+}
+
+.gallery__list {
+  margin-block-start: -21px;
+}
+
+.section__link {
+  text-shadow: 1px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.section__link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.section__link:focus {
+  outline: none;
+}
+
+.section__link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
+.header__accent {
+  font-weight: 400;
+}
+
+.header__margin {
+  margin-block-end: -1px;
+}
+
+.gallery__item {
+  margin-block-end: 5px;
+}
+
+.gallery__img {
+  width: 100%;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+  min-height: 674px;
+  margin-top: 29px;
+}
+
+.footer__title {
+  color: var(--h1-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  margin-block-start: 7px;
+}
+
+.footer__decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: 638px;
+  left: 0px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  width: 25px;
+  height: 25px;
+}
+
+.footer__decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 0px;
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  width: 25px;
+  height: 24px;
 }

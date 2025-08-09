@@ -8,7 +8,8 @@ body {
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  background: var(--cover-image) center / cover fixed var(--title-decor);
+  background: var(--cover-image) center / cover fixed;
+  background-color: var(--background-color);
   padding: var(--main-padding);
 }
 
@@ -16,7 +17,7 @@ body {
   display: grid;
   grid-template-rows: repeat(3, min-content);
   position: relative;
-  height: 1vh;
+  height: 100vh;
   min-height: 668px;
   margin-block-end: 40px;
 }
@@ -28,7 +29,7 @@ body {
   margin-block-start: 76px;
 }
 
-.header__decorated-zone::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   top: 633px;
@@ -40,7 +41,7 @@ body {
   height: 25px;
 }
 
-.header__decorated-zone::before {
+.decorated-zone::before {
   content: "";
   position: absolute;
   top: 10px;
@@ -122,7 +123,7 @@ button:focus {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 83%;
-  color: var(--h1-color);
+  color: var(--main-title-color);
 }
 
 .header__title {
@@ -131,7 +132,6 @@ button:focus {
 }
 
 .header__text {
-  min-height: 117px;
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -209,7 +209,6 @@ button:focus {
 
 .header__margin {
   margin-block-end: 20px;
-  margin-block-start: -1px;
 }
 
 .gallery__item {
@@ -238,35 +237,13 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1vh;
+  height: 100vh;
   min-height: 668px;
   margin-top: 29px;
 }
 
 .footer__title {
-  color: var(--h1-color);
+  color: var(--main-title-color);
   text-shadow: 2px 2px 0 var(--accent-color);
   margin-block-start: 7px;
-}
-
-.footer__decorated-zone::after {
-  content: "";
-  position: absolute;
-  top: 635px;
-  left: 0px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-  width: 25px;
-  height: 25px;
-}
-
-.footer__decorated-zone::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  right: 0px;
-  border-right: 1px solid var(--accent-color);
-  border-top: 1px solid var(--accent-color);
-  width: 25px;
-  height: 24px;
 }

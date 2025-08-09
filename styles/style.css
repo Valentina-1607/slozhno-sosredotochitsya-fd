@@ -202,7 +202,7 @@ button:focus {
 }
 
 .header__margin {
-  margin-block-end: -1px;
+  margin-block-end: 20px;
   margin-block-start: -1px;
 }
 

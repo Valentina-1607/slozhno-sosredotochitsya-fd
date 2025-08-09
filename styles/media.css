@@ -143,12 +143,19 @@
 
 @media (width >= 1024px) {
   .header {
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(2, min-content);
     min-height: 768px;
+    margin: 0 auto;
+    margin-block-end: 60px;
   }
 
   .header__top-row {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 20px;
+    margin-inline-start: 7px;
   }
 
   .decorated-zone::before {
@@ -167,9 +174,9 @@
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    margin-inline-end: 376px;
     gap: 9px;
-    margin-block-start: -55px;
+    margin-block-start: 0;
+    margin-inline-end: 0;
   }
 
   .header__title {
@@ -186,6 +193,8 @@
     width: 984px;
     padding-right: 0;
     gap: 14px;
+    margin: 0 auto;
+    margin-block-end: 29px;
   }
 
   .section__text-why {
@@ -195,7 +204,9 @@
   .section__about {
     grid-template-rows: repeat(4, min-content);
     grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
     margin-block-end: 28px;
+    padding: 0 10px;
   }
 
   .title__about {
@@ -220,7 +231,7 @@
 
   .gallery {
     margin-inline-start: 9px;
-    margin-block-end: 37px;
+    margin-block-end: 26px;
   }
 
   .img__sunset {

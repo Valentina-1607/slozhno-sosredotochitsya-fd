@@ -47,7 +47,8 @@
 
 .header__decoration {
   position: absolute;
-  top: 1px;
+  top: 0px;
+  right: 17px;
   justify-self: flex-end;
   font-weight: 400;
   font-size: 18px;
@@ -61,13 +62,14 @@
 
 .header__decoration::after {
   content: "";
-  display: inline-block;
+  position: absolute;
+  top: 7px;
+  right: -19px;
   background-color: var(--accent-color);
   width: 9px;
   height: 9px;
   border-radius: 100%;
   box-shadow: 0 0 4px 2px var(--accent-color);
-  margin-left: 9px;
 }
 
 .header__theme-menu {
@@ -89,7 +91,7 @@
   text-align: center;
   text-transform: lowercase;
   color: var(--accent-color);
-  padding: 2px 13px;
+  padding: 2px 14px;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -201,6 +203,7 @@ button:focus {
 
 .header__margin {
   margin-block-end: -1px;
+  margin-block-start: -1px;
 }
 
 .gallery__item {
@@ -211,13 +214,26 @@ button:focus {
   width: 100%;
 }
 
+.img__ice-cream {
+  margin-block-start: 7px;
+}
+.img__tape {
+  margin-block-start: 6px;
+}
+.img__books {
+  margin-block-start: 6px;
+}
+.img__streets {
+  margin-block-start: 6px;
+}
+
 .footer {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 1vh;
-  min-height: 674px;
+  min-height: 668px;
   margin-top: 29px;
 }
 
@@ -230,7 +246,7 @@ button:focus {
 .footer__decorated-zone::after {
   content: "";
   position: absolute;
-  top: 638px;
+  top: 635px;
   left: 0px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
@@ -241,7 +257,7 @@ button:focus {
 .footer__decorated-zone::before {
   content: "";
   position: absolute;
-  top: 16px;
+  top: 13px;
   right: 0px;
   border-right: 1px solid var(--accent-color);
   border-top: 1px solid var(--accent-color);

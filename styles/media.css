@@ -155,11 +155,10 @@
     align-items: center;
     justify-content: center;
     margin-block-start: 20px;
-    margin-inline-start: 7px;
   }
 
   .decorated-zone::before {
-    right: -5px;
+    right: 10px;
   }
 
   .decorated-zone::after {
@@ -168,7 +167,7 @@
 
   .header__decoration {
     top: 10px;
-    right: 12px;
+    right: 27px;
   }
 
   .header__theme-menu-list {
@@ -266,6 +265,5 @@
   .footer__title {
     font-size: 157px;
     margin-block-start: 0px;
-    margin-inline-start: 16px;
   }
 }
